@@ -11,6 +11,11 @@ header {
         background-color: $header-BackGround-Color;
         justify-content: space-around;
         height: 23rem;
+
+        @include tablet{
+            display: block;
+            height: 100%;
+        }
         
         .profile{
             display: flex;
@@ -43,6 +48,12 @@ header {
             text-align: left;
             align-items: left;
             margin: auto;
+
+            
+            @include tablet{
+                margin:-2rem 0 0 4rem;
+                padding-bottom: 4rem;
+            }
 
             p{
                 color: $header-font-color;

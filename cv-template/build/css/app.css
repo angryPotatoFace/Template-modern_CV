@@ -450,6 +450,12 @@ header .contenido-header {
   justify-content: space-around;
   height: 23rem;
 }
+@media (max-width: 815px) {
+  header .contenido-header {
+    display: block;
+    height: 100%;
+  }
+}
 header .contenido-header .profile {
   display: flex;
   color: #a4abc5;
@@ -477,6 +483,12 @@ header .contenido-header .contact {
   text-align: left;
   align-items: left;
   margin: auto;
+}
+@media (max-width: 815px) {
+  header .contenido-header .contact {
+    margin: -2rem 0 0 4rem;
+    padding-bottom: 4rem;
+  }
 }
 header .contenido-header .contact p {
   color: #a4abc5;
@@ -509,6 +521,11 @@ header .contenido-header .contact p:first-child {
   gap: 1fr;
   text-align: left;
 }
+@media (max-width: 815px) {
+  .myProjects__container {
+    display: block;
+  }
+}
 
 .myProjects__title {
   display: inline-block;
@@ -537,6 +554,12 @@ header .contenido-header .contact p:first-child {
   grid-template-columns: repeat(3, 1fr);
   gap: 1fr;
   text-align: left;
+}
+
+@media (max-width: 815px) {
+  .myProjects__redirection {
+    margin: 10rem 0;
+  }
 }
 
 .cbox-gallary1 {
@@ -588,6 +611,11 @@ header .contenido-header .contact p:first-child {
   gap: 1fr;
   text-align: left;
 }
+@media (max-width: 815px) {
+  .mySelf .mySelf__contenido {
+    display: block;
+  }
+}
 .mySelf .mySelf__contenido .mySelf__description .col-12 {
   display: inline-block;
   border-bottom: 3px solid #f1646c;
@@ -621,6 +649,11 @@ header .contenido-header .contact p:first-child {
 }
 .mySelf .mySelf__contenido .mySelf__personal-information {
   margin: auto 0 auto 10rem;
+}
+@media (max-width: 815px) {
+  .mySelf .mySelf__contenido .mySelf__personal-information {
+    margin: 5rem 0 0 0;
+  }
 }
 .mySelf .mySelf__contenido .mySelf__personal-information .information p,
 .mySelf .mySelf__contenido .mySelf__personal-information .information p span {
@@ -702,6 +735,11 @@ header .contenido-header .contact p:first-child {
   gap: 1fr;
   text-align: left;
 }
+@media (max-width: 815px) {
+  .experienceAndSkill {
+    display: block;
+  }
+}
 
 .experienceAndSkill__description {
   display: grid;
@@ -772,6 +810,11 @@ header .contenido-header .contact p:first-child {
 .skill-progress-bar {
   margin: auto 0;
 }
+@media (max-width: 815px) {
+  .skill-progress-bar {
+    margin-top: 5rem;
+  }
+}
 
 .progressbar > div {
   background-color: #4d79f6;
@@ -841,6 +884,11 @@ header .contenido-header .contact p:first-child {
 .contactMe-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+@media (max-width: 815px) {
+  .contactMe-container {
+    display: block;
+  }
 }
 
 .contact-info {

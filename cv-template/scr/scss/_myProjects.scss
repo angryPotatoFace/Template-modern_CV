@@ -7,8 +7,10 @@
 }
 
 .myProjects__container{
-    @include grid(2,1fr)
-
+    @include grid(2,1fr);
+    @include tablet{
+        display: block;
+    }
 
 }
 
@@ -19,6 +21,7 @@
 }
 
 .myProjects__items{
+
     ul{
         display: flex;
         list-style: none;
@@ -43,6 +46,12 @@
 
 .myProjects__images{
     @include grid(3,1fr);
+}
+
+.myProjects__redirection{
+    @include tablet{
+        margin: 10rem 0;
+    }
 }
 
 .cbox-gallary1 {

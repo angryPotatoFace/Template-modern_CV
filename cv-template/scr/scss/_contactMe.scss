@@ -12,6 +12,10 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+    @include tablet{
+        display: block;
+    }
+
 }
 .contact-info{
     display: flex;
@@ -48,6 +52,7 @@ form .row {
                         'center'
                         'boton';
     grid-auto-flow: column;
+
     
     .form-name{
         input{
