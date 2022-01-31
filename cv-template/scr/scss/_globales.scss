@@ -1,0 +1,96 @@
+@import 'variable';
+
+/*Defino cosas variables*/
+html {
+
+    font-size: 62.5%; /* 1 rem = 10 px*/ 
+    box-sizing: border-box; /* Evita que el padding modifique el tamaño de mis imagenes*/
+}
+
+/* Evita que el padding modifique el tamaño de mis imagenes*/
+*, *:before, *:after{
+    box-sizing: inherit; 
+}
+
+/* Globales */
+body{
+    font-size: 16px;  /* 1 rem = 10 px*/ 
+    line-height: 1.5; /* Interlineado  */ 
+    color: $negro; /* Color letras */ 
+    font-family: $fuente_principal; /* Fonts principal */ 
+    background-color: #eaf0f7;
+}
+
+p {
+   font-size: 2rem;
+   font-family: $fuente_principal; 
+   color: $negro;
+}
+
+a{
+    text-decoration: none; // Quito la decoracion del los enlaces 
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.container-adjust {
+    background-color: $blanco;
+    text-align: left;
+    background-color: #fff;
+}
+
+h1,h2,h3{
+    margin: 0 0 5rem 0;  
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+    color: $header-h-color;
+    margin: 10px 0 6px 0;
+    font-weight: 600;
+}
+h4{
+    font-size: 1.7rem;
+}
+
+main {
+    padding: 2rem 4rem;
+    background-color: white;
+}
+
+
+.progressbar {
+    background-color: #f3f6f7;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+
+        #html{
+            width: 95%;
+        }
+        #web{
+            width: 80%;
+        }
+        #uiux{
+            width: 75%;
+        }
+        #react{
+            width: 85%;
+        }
+
+        text-decoration: underline;
+  }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/nosotros.html -->
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><link type="text/css" id="dark-mode" rel="stylesheet" href="http://127.0.0.1:5500/nosotros.html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <!-- Prefetch 
+        Carga mas rapido la proxima pagina que sea mas probable que el usuario visite
+    -->
+    <link rel="prefecth" href="http://127.0.0.1:5500/nosotros.html" as="document">
+    <link rel="preload" href="./Page Title_files/normalize.css" as="style">  <!-- Sirve para pre cargar el archivo mejora para perfomance -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./Page Title_files/normalize.css"> 
+    <link rel="preload" href="./Page Title_files/style.css" as="style"> <!-- Sirve para pre cargar el archivo mejora para perfomance -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./Page Title_files/style.css">
+    <!-- Fuente de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="crossorigin">
+    <link href="./Page Title_files/css2" rel="stylesheet">
+    <link href="./Page Title_files/css2(1)" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo " href="http://127.0.0.1:5500/index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto ">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">    
+                    <a class="navegacion__enlace" href="http://127.0.0.1:5500/nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="http://127.0.0.1:5500/cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="http://127.0.0.1:5500/contacto.html">Contacto</a>                
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto contenedor">
+            <h2 class="head-title" style="
+    color: black;
+">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los mejores con las mejores recetas y consejos</p>
+        </div>
+    </header>
+    <main>
+    <div class="contenedor">
+        <div class="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <div class="sobre-nosotros__descripcion">
+                <img src="./Page Title_files/nosotros.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut exercitationem commodi iure ipsa magnam iusto eum, cupiditate omnis sint id ut placeat corporis nobis ducimus non quaerat repudiandae voluptatum esse?</p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo " href="http://127.0.0.1:5500/index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto ">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">    
+                    <a class="navegacion__enlace" href="http://127.0.0.1:5500/nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="http://127.0.0.1:5500/cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="http://127.0.0.1:5500/contacto.html">Contacto</a>                
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

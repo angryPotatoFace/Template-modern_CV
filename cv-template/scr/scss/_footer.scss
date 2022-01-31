@@ -1,0 +1,11 @@
+@import 'variable';
+
+.col-sm-12{
+    background-color: $header-BackGround-Color;
+    padding: 2rem;   
+    text-transform: uppercase;
+
+    p{
+        color: #b6c2e4;
+    }  
+}

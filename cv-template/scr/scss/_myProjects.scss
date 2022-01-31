@@ -1,0 +1,96 @@
+@import 'variable';
+@import 'mixin';
+
+
+.myProjects{
+    margin: 2rem 0;
+}
+
+.myProjects__container{
+    @include grid(2,1fr)
+
+
+}
+
+.myProjects__title{
+    display: inline-block;
+    border-bottom: 3px solid #f1646c;
+    margin-top: -1rem;
+}
+
+.myProjects__items{
+    ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: space-evenly;
+        
+        li a {
+            color:#8997bd;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+
+            &:hover{
+                color: #4d79f6;
+                cursor: pointer;
+            }
+        }
+
+        
+    }
+  
+}
+
+.myProjects__images{
+    @include grid(3,1fr);
+}
+
+.cbox-gallary1 {
+    padding-bottom: 6rem;
+}
+
+.item-container{
+    height: 13rem;
+    width: 100%;
+}
+
+.text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem;
+    svg{
+        height: 4.2rem;
+        width: 4.2rem;
+        color: #4d79f6;
+        margin-top: 7rem;
+    }
+    p{
+        line-height: 1.6;
+        font-family: "IBM Plex Sans",sans-serif;
+        font-size: 14px;
+        letter-spacing: .1px;
+        color: #50649c;
+    }
+}
+
+.person-feedback{
+    p{
+        margin: 0;
+        padding: 0;
+        color: #4d79f6;
+    }
+    small{
+        color: #50649c;
+    }
+}
+
+
+.selectItem {
+    color: #4d79f6;
+    border-bottom: 3px solid #4d79f6;
+}
+
+
+
+

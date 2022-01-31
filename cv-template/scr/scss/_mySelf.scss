@@ -1,0 +1,68 @@
+@import 'variable';
+@import 'mixin';
+
+.mySelf{
+    
+    .mySelf__contenido{
+        @include grid(2,1fr);
+        
+        .mySelf__description{
+            .col-12 {
+                display: inline-block;
+                border-bottom: 3px solid #f1646c;
+                h4{
+                    padding: 0;
+                    margin-bottom: 1rem;
+                }
+                
+            }
+
+            .col-sm-6{
+                h4{
+                    color: $azul;
+                    line-height: 22px;
+                    font-size: 18px;
+                    margin: 1rem 0;
+                    padding: 0;
+                }
+                p{
+                    color:#50649c;
+                    line-height: 1.6;
+                    font-family: "IBM Plex Sans",sans-serif;
+                    font-size: 14px;
+                    letter-spacing: .1px;
+                }
+                
+                a {
+                    background-color: rgba(77,121,246,.1);
+                    color: #4d79f6;
+                    border: none;
+                    border-radius: 0.5rem;
+                    padding: 1rem;
+                    font-size: 12px;
+                    font-family: "IBM Plex Sans",sans-serif;
+                }
+         
+        }
+    }
+
+    .mySelf__personal-information {
+        margin: auto 0 auto 10rem;
+        .information{
+            p,
+            p span {
+                line-height: 1.6;
+                font-family: "IBM Plex Sans",sans-serif;
+                font-size: 14px;
+                letter-spacing: .1px;
+                color: #50649c;
+                .personal-detail-info{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+}
+
